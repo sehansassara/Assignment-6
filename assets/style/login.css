@@ -5,42 +5,19 @@ body{
     padding: 0;
 }
 
-.login-sec{
+.loginlab{
     position: relative;
-    height: 100vh;
+    top: 25px;
 }
 
-.form {
-    width: 290px;
-    height: 373px;
-    background: linear-gradient(to bottom, #ffffff 0%, #999999 100%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+#uname{
+    position: relative;
+    top: 25px;
 }
 
-.form-control {
-    max-width: 190px;
-    height: 30px;
-    background: #A7A3A3;
-    border: none;
-    border-radius: 5px;
-    padding: 2px;
+#password{
     position: relative;
-    margin-top: 5px;
-    left: 12%;
-}
-
-.form-label{
-    position: relative;
-    top: 90px;
-    left: 12%;
+    top: 25px;
 }
 
 #image{
@@ -53,13 +30,22 @@ body{
     height: 80px;
 }
 
-.btn{
+.btn-log{
     position: relative;
-    top: 100px;
-    left: 12%;
-    width: 190px;
-    height: 30px;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 800;
+    top: 25px;
+}
+
+.form-log{
+    width: 290px;
+    height: 373px;
+    background: linear-gradient(to bottom, #ffffff 0%, #999999 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
