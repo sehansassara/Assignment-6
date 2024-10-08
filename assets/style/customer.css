@@ -1,70 +1,75 @@
-
-.customer{
-    position: relative;
-    height: 100vh;
-    margin-left: 100px;
-    margin-right: 100px;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.topic {
-    background-color: blue;
-    color: white;
-    text-align: center;
-
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.right-align {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 250px;
+.nav-link {
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
 }
 
-.btn-success{
-    position: relative;
-    top: 31px;
+.nav-link:hover {
+    color: #0d6efd;
 }
 
-#search{
-    position: relative;
-    top:29px;
+#customer-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.sec-bt button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sec-bt button:hover {
+    transform: translateY(-2px);
 }
 
 .custom-table {
-    width: 50%;
-    max-height: 70%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.custom-table th, .custom-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.topic {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.container {
+    padding: 8px;
+    background: #fff;
     border-radius: 8px;
-   /* position: relative;*/
-    top: 30px;
-    left: 20px;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.details {
-    /*position: absolute;*/
-    top: -80px;
-    left: 60%;
-    /*width: 300px;*/
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
-    border: 1px solid #ccc;
-    background-color: #fff;
-    /*margin-top: 300px;*/
-}
-
-
-
-.input{
-    width: 100% !important;
-}
-
-.btn-f{
-    width: 80px;
-    position: relative;
-}
-
-.sec-bt{
-    position: relative;
-    left: 60%;
-    top: 5%;
+.customer {
+    padding: 0 20px;
 }

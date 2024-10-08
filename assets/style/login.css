@@ -1,51 +1,87 @@
-body{
-    overflow-x: hidden;
-    height: 100%;
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #dee1e7, #3b3b48);
+    color: #fff;
+    overflow: hidden;
 }
 
-.loginlab{
-    position: relative;
-    top: 25px;
+.form-log {
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
-#uname{
-    position: relative;
-    top: 25px;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-#password{
-    position: relative;
-    top: 25px;
+#image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    animation: popUp 1.5s ease-in-out;
 }
 
-#image{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 5px;
-    margin: auto;
-    width: 80px;
-    height: 80px;
+@keyframes popUp {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
-.btn-log{
-    position: relative;
-    top: 25px;
+.login-header {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
-.form-log{
-    width: 290px;
-    height: 373px;
-    background: linear-gradient(to bottom, #ffffff 0%, #999999 100%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+.loginlab {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #d1d1d1;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.btn-log {
+    background: linear-gradient(45deg, #4e83ff, #9c23f9);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-log:hover {
+    background: linear-gradient(45deg, #23f9e7, #4ec4ff);
+    transform: scale(1.05);
+}
+
+.btn-log:active {
+    transform: scale(1);
+}
+
+.d-grid.gap-2 > button {
+    margin-top: 10px;
 }
