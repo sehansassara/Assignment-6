@@ -23,3 +23,11 @@
 .text1:hover, .text2:hover, .text3:hover {
     color: #65ecf8;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
